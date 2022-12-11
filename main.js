@@ -17,7 +17,9 @@ cancel.addEventListener('click',()=>{
 })
 //when click on done btn 
 done.addEventListener('click',()=>{
-    createToDo();
+    if(title.value!==""&&desc.value!==""){
+        createToDo();
+    }
 })
 
 // read request by AJAx
