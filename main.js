@@ -64,8 +64,6 @@ function createToDo() {
                         <h2>${myNewCard.title}</h2>
                         <p>${myNewCard.body}</p>
                     </div>`;
-
-    //add card to Daily List 
     card.innerHTML += newCard;
 
 };
