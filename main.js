@@ -43,7 +43,7 @@ done.addEventListener('click',()=>{
 
 // create request using fetch
 function createToDo() {
-    const myNewCard = {
+    const myCard = {
         title: title.value,
         body: desc.value,
     };
@@ -53,7 +53,7 @@ function createToDo() {
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(myNewCard),
+        body: JSON.stringify(myCard),
     })
         .then((res) => res.json())
         .catch((error) => {
@@ -61,8 +61,8 @@ function createToDo() {
         });
 
     let newCard = `<div class="todo_card">
-                        <h2>${myNewCard.title}</h2>
-                        <p>${myNewCard.body}</p>
+                        <h2>${myCard.title}</h2>
+                        <p>${myCard.body}</p>
                     </div>`;
     card.innerHTML += newCard;
 
