@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Todo</h1>
+        </header>
+        <main>
+            <div class="box">
+                <div class="card">
+                </div>
+            </div>
+            <div class="icons addition">
+                <a href="#form"><h2 id="add">+</h2></a>
+            </div>
+            <div class="card" id="form">
+                <h2>Lorem ipsum dolor</h2>
+                <form>
+                    <input type="text" placeholder="Take dog out on walk" id="title">
+                    <textarea  cols="30" rows="10" style="resize: none;" placeholder="He needs vaccine shot too" id="description"></textarea>
+                </form>
+                <div class="icons">
+                    <img src="image/cancel.png" alt="cancel" width="30px" id="cancel">
+                    <img src="image/done.svg" alt="done" width="30px" id="done">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
